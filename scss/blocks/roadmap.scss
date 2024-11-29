@@ -1,0 +1,30 @@
+@import '../_mixins.scss';
+@import '../_variables.scss';
+
+.roadmap {
+	&__item {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		margin-bottom: 120px;
+	}
+
+	&__description {
+		max-width: 480px;
+	}
+
+	&__title {
+		font-weight: 700;
+		font-size: 40px;
+		line-height: 120%;
+		color: $black;
+		margin-bottom: 30px;
+	}
+
+	&__text {
+		font-weight: 400;
+		font-size: 18px;
+		line-height: 150%;
+		color: $gray;
+	}
+}
