@@ -247,7 +247,7 @@ img {
   position: absolute;
   top: -80px;
   left: 80px;
-  background: url("../../assets/img/dashboard-big.png") no-repeat;
+  background: url("../../assets/img/dashboard_big_new.png") no-repeat;
   width: 800px;
   height: 550px;
   border-radius: 30px;
@@ -312,6 +312,9 @@ img {
   align-items: center;
   margin-bottom: 120px;
 }
+.roadmap__item--right {
+  flex-direction: row-reverse;
+}
 .roadmap__description {
   max-width: 480px;
 }
@@ -327,6 +330,185 @@ img {
   font-size: 18px;
   line-height: 150%;
   color: #8794ba;
+}
+.roadmap__picture {
+  max-width: 600px;
+  max-height: auto;
+  box-shadow: 0px 18px 50px -15px rgba(25, 42, 89, 0.2);
+  border-radius: 30px;
+}
+
+.pricing-plans {
+  padding-top: 280px;
+  padding-bottom: 100px;
+  position: relative;
+}
+.pricing-plans::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background: #172755;
+  clip-path: polygon(0 25%, 100% 0, 100% 100%, 0 100%);
+}
+.pricing-plans::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: -17px;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background: #ef2a82;
+  clip-path: polygon(0 25%, 100% 0, 100% 100%, 0 100%);
+}
+.pricing-plans__description {
+  margin-bottom: 80px;
+}
+.pricing-plans__title {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 120%;
+  text-align: center;
+  color: #f8f9ff;
+  margin-bottom: 30px;
+}
+.pricing-plans__text {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 150%;
+  text-align: center;
+  margin: 0 auto;
+  max-width: 540px;
+  color: #8794ba;
+}
+
+.pricing-plans__rates {
+  display: flex;
+  justify-content: space-between;
+}
+.pricing-plans__rates .rates-item {
+  border-radius: 30px;
+  box-shadow: 0px 18px 50px -15px #060f28;
+  background: #0f1f4b;
+  padding: 50px 66px 70px;
+  text-align: center;
+}
+.pricing-plans__rates .rates-item__title {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 120%;
+  text-align: center;
+  color: #f8f9ff;
+  margin-bottom: 10px;
+}
+.pricing-plans__rates .rates-item__text-block {
+  position: relative;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 150%;
+  text-align: center;
+  color: #8794ba;
+  margin-bottom: 66px;
+}
+.pricing-plans__rates .rates-item__text-block::before {
+  content: "";
+  position: absolute;
+  width: 220px;
+  height: 1px;
+  top: 220%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #8794ba;
+}
+.pricing-plans__rates .rates-item__price {
+  font-weight: 700;
+  font-style: 60px;
+  text-align: center;
+  color: #f8f9ff;
+  margin-bottom: 5px;
+}
+.pricing-plans__rates .rates-item__currency {
+  font-size: 30px;
+}
+.pricing-plans__rates .rates-item__subtitle {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 40%;
+  text-align: center;
+  color: #8794ba;
+  margin-bottom: 40px;
+}
+.pricing-plans__rates .rates-item__order-btn {
+  border: 1px solid #2a407c;
+  background-color: transparent;
+  border-radius: 68px;
+  color: #fff;
+  font-size: 16px;
+  padding: 15px 80px;
+  cursor: pointer;
+}
+.pricing-plans__rates .rates-item--pink {
+  box-shadow: 0px 18px 50px -15px #060f28;
+  background: #fff;
+}
+.pricing-plans__rates .rates-item--pink .rates-item__title,
+.pricing-plans__rates .rates-item--pink .rates-item__price {
+  color: #172755;
+}
+.pricing-plans__rates .rates-item--pink .rates-item__order-btn {
+  border: 1px solid #ef2a82;
+  background-color: #ef2a82;
+  border-radius: 68px;
+  color: #fff;
+  font-size: 16px;
+  padding: 15px 80px;
+  cursor: pointer;
+}
+
+.footer-menu {
+  background: #172755;
+}
+.footer-menu__wrapper {
+  border-top: 1px solid #2a407c;
+  padding-top: 63px;
+  padding-bottom: 103px;
+  display: flex;
+  justify-content: space-between;
+}
+.footer-menu__logo {
+  display: flex;
+  align-items: center;
+}
+.footer-menu__logo img {
+  margin-right: 10px;
+}
+.footer-menu__logo p {
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 20px;
+  color: #8794ba;
+}
+.footer-menu__list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 294px;
+}
+.footer-menu__link {
+  color: #8794ba;
+  text-decoration: none;
+}
+.footer-menu__links {
+  display: flex;
+  justify-content: space-between;
+  width: 135px;
 }
 
 /*# sourceMappingURL=style.css.map */
