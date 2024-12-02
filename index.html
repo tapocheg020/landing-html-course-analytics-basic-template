@@ -8,13 +8,13 @@
 	</head>
 	<body class="container">
 		<section class="intro-analytics">
-			<div class="wrap">
+			<div class="wrap wrap-padding">
 				<header class="header">
 					<a href="#" class="header__logo">
 						<img src="/assets/icons/logo.svg" alt="" />
 						<p>Analytics</p>
 					</a>
-					<nav class="header__menu">
+					<nav class="header__menu header__menu--adaptive">
 						<ul class="header__menu-list">
 							<li class="header__menu-item"><a href="#">Products</a></li>
 							<li class="header__menu-item"><a href="#">Pricing</a></li>
@@ -25,7 +25,32 @@
 					</nav>
 					<div class="header__btns">
 						<button class="header__btn--transparent">Sign in</button>
-						<button class="header__btn--circled">Sign up</button>
+						<button class="header__btn--circled header__btn--adaptive">
+							Sign up
+						</button>
+					</div>
+
+					<div class="header-menu-btn">
+						<input type="checkbox" />
+						<nav class="header__menu header__menu--side">
+							<ul class="header__menu-list">
+								<li class="header__menu-item">
+									<a href="/" class="header__menu-link">Products</a>
+								</li>
+								<li class="header__menu-item">
+									<a href="/" class="header__menu-link">Pricing</a>
+								</li>
+								<li class="header__menu-item">
+									<a href="/" class="header__menu-link">FAQ</a>
+								</li>
+								<li class="header__menu-item">
+									<a href="/" class="header__menu-link">Blog</a>
+								</li>
+								<li class="header__menu-item">
+									<a href="/" class="header__menu-link">Blog</a>
+								</li>
+							</ul>
+						</nav>
 					</div>
 				</header>
 
@@ -49,7 +74,8 @@
 			</div>
 		</section>
 
-		<section class="main-futures wrap">
+		<!-- Второй блок -->
+		<section class="main-futures wrap wrap-padding">
 			<h2 class="main-futures__title">Main Features</h2>
 			<p class="main-futures__text">
 				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elementum nisi
@@ -97,7 +123,8 @@
 			</div>
 		</section>
 
-		<section class="roadmap wrap">
+		<!-- Третий блок -->
+		<section class="roadmap wrap wrap-padding">
 			<div class="roadmap__item">
 				<div class="roadmap__description">
 					<h3 class="roadmap__title">Automated Reports & Widget Alerts</h3>
@@ -148,7 +175,7 @@
 
 		<!-- Четвертый блок  -->
 		<section class="pricing-plans">
-			<div class="wrap">
+			<div class="wrap wrap-padding">
 				<div class="pricing-plans__description">
 					<h3 class="pricing-plans__title">Pricing Plans</h3>
 					<p class="pricing-plans__text">
@@ -168,20 +195,20 @@
 					</div>
 
 					<div class="rates-item rates-item--pink">
-						<h4 class="rates-item__title">Starter</h4>
-						<p class="rates-item__text-block">up to 3 users</p>
+						<h4 class="rates-item__title">Standard</h4>
+						<p class="rates-item__text-block">up to 20 users</p>
 						<p class="rates-item__price">
-							<span class="rates-item__currency">$</span>29
+							<span class="rates-item__currency">$</span>99
 						</p>
 						<p class="rates-item__subtitle">per month</p>
 						<button class="rates-item__order-btn">Order</button>
 					</div>
 
 					<div class="rates-item">
-						<h4 class="rates-item__title">Starter</h4>
-						<p class="rates-item__text-block">up to 3 users</p>
+						<h4 class="rates-item__title">Premium</h4>
+						<p class="rates-item__text-block">up to 200 users</p>
 						<p class="rates-item__price">
-							<span class="rates-item__currency">$</span>29
+							<span class="rates-item__currency">$</span>299
 						</p>
 						<p class="rates-item__subtitle">per month</p>
 						<button class="rates-item__order-btn">Order</button>
@@ -190,7 +217,7 @@
 			</div>
 		</section>
 
-		<footer class="footer-menu">
+		<footer class="footer-menu wrap-padding">
 			<div class="footer-menu__wrapper wrap">
 				<div class="footer-menu__logo">
 					<img src="./assets/icons/logo-gray.svg" alt="logo" />

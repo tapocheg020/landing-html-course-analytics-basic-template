@@ -2,10 +2,8 @@
 @import '../_variables.scss';
 
 .main-futures {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	text-align: center;
+	// align-items: center;
+	// text-align: center;
 
 	padding-top: 100px;
 	padding-bottom: 100px;
@@ -13,9 +11,10 @@
 	&__title {
 		font-weight: 700;
 		font-size: 40px;
-		line-height: 47px;
+		// line-height: 47px;
 		color: $black;
 		margin-bottom: 30px;
+		text-align: center;
 	}
 
 	&__text {
@@ -24,12 +23,12 @@
 		line-height: 150%;
 		color: $gray;
 		margin-bottom: 70px;
-		width: 1060px;
-		height: 60px;
+		text-align: center;
 	}
 
 	&__advantages {
 		display: flex;
+		// flex-direction: column;
 		justify-content: space-between;
 	}
 
@@ -56,6 +55,49 @@
 		color: $gray;
 		font-weight: 400;
 		font-size: 16px;
-		line-height: 150%;
+		line-height: 140%;
+		text-align: center;
+	}
+}
+
+@media screen and (max-width: 1200px) {
+	.main-futures__advantages {
+		gap: 15px;
+	}
+}
+
+@media (max-width: 768px) {
+	.main-futures {
+		margin-bottom: 30px;
+		padding-bottom: 40px;
+
+		&__title {
+			padding-top: 50px;
+			font-size: 36px;
+		}
+
+		&__text {
+			font-size: 16px;
+			margin-bottom: 50px;
+		}
+
+		&__advantages {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+		}
+	}
+}
+
+@media (max-width: 440px) {
+	.main-futures__advantages-item {
+		width: 290px;
+	}
+
+	.main-features__advantages {
+		gap: 45px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
 	}
 }

@@ -103,10 +103,11 @@
 			text-align: center;
 			color: $light-gray;
 			margin-bottom: 5px;
+			font-size: 40px;
 		}
 
 		&__currency {
-			font-size: 30px;
+			font-size: 25px;
 		}
 
 		&__subtitle {
@@ -133,6 +134,33 @@
 
 		.rates-item__order-btn {
 			@include btn($pink, $pink, 68px, #fff, 16px, 15px, 80px);
+			transition: all 0.3s ease;
+
+			&:hover {
+				@include btn($pink, #cf196b, 68px, #fff, 16px, 15px, 80px);
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 1200px) {
+	.pricing-plans__rates {
+		.rates-item {
+			padding: 30px 45px 30px;
+			text-align: center;
+		}
+	}
+}
+
+@media screen and (max-width: 992px) {
+	.pricing-plans__rates {
+		display: flex;
+		flex-direction: column;
+
+		.rates-item {
+			padding: 50px 66px 70px;
+			text-align: center;
+			margin: 35px 250px;
 		}
 	}
 }
